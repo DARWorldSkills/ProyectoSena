@@ -148,7 +148,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo16juves"
+                android:id="@+id/campo16jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -218,7 +218,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo17juves"
+                android:id="@+id/campo17jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -288,7 +288,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo18juves"
+                android:id="@+id/campo18jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -358,7 +358,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo19juves"
+                android:id="@+id/campo19jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -428,7 +428,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo20juves"
+                android:id="@+id/campo20jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
