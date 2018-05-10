@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="ctpi">CTPI</string>
+    <string name="centrotele">Centro de Teleinformatica y Produccion Industrial</string>
+    <string name="btnlogin">Login</string>
+    <string name="btntextview">Informacion del programa</string>
+    <string name="area">Área</string>
+    <string name="indCrea">Industrias Creativas</string>
+    <string name="ambiente">Ambiente de formación</string>
+    <string name="numero">2</string>
+    <string name="jornadaM">Jornada Mañana</string>
+    <string name="horarioM">Horario 7 - 13</string>
+    <string name="Programa">Programa</string>
+    <string name="Pro1">Desarrollo de Videojuegos</string>
+    <string name="jornadaT">Jornada Tarde</string>
+    <string name="HorarioT">Horario 13 - 19</string>
+    <string name="pro2">Animación 3D</string>
+    <string name="jornadaN">Jornada Noche</string>
+    <string name="HorarioN">Horario 19 - 22</string>
+    <string name="pro3">Especialización en Contenidos Animados </string>
+    <string name="Ficha">Ficha: </string>
+    <string name="tecnologo">Tecnólogo </string>
+    <string name="Lider">Instructor Lider </string>
+    <string name="textPlay">El desarrollo se lleva a cabo por un desarrollador de videojuegos,
+        que puede variar de una persona a un gran negocio. Los videojuegos comerciales para PC y
+        videoconsolas son normalmente financiados por una distribuidora y tardan varios años en
+        desarrollarse. Los videojuegos independientes pueden tomar menos tiempo y pueden ser producidos a
+        bajo precio por individuos y pequeños desarrolladores. La industria de videojuegos independientes
+        ha visto un aumento en los últimos años
+        con el crecimiento de los nuevos sistemas de distribución en línea y el mercado de juegos para móviles. </string>
+
+    <string name="textcaja">La animación en 3D es un proceso complejo pues trae consigo la realización previa
+        de otros procesos como el diseño y modelado
+        de la imagen a animar. Existen numerosos mecanismos a utilizar para llegar de una forma u otra a comprender los
+        principios de la animación en 3D, para ello debe de existir un bocetado de lo que se quiere hacer, partiendo de ello,
+        se puede realizar una animación adecuada con la herramienta que se utilizará.</string>
+
+    <string name="textespe"> Actualmente, las animaciones se han convertido en un recurso educativo revolucionario para los procesos de enseñanza-aprendizaje, ya que permiten incursionar la presentación de contenidos más innovadores,  creativos y cautivadores.
+
+Así mismo, la variedad de elementos que se puede utilizar en estas, generan una mayor conexión del estudiante con la información y a su vez una experiencia más enriquecedora. </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
