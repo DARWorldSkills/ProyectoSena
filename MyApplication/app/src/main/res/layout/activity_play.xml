@@ -163,7 +163,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo1juves"
+                android:id="@+id/campo1jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -233,7 +233,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo2juves"
+                android:id="@+id/campo2jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -303,7 +303,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo3juves"
+                android:id="@+id/campo3jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -373,7 +373,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo4juves"
+                android:id="@+id/campo4jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -443,7 +443,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo5juves"
+                android:id="@+id/campo5jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -513,7 +513,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo6juves"
+                android:id="@+id/campo6jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"

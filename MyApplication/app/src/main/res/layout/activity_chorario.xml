@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.CHorario"
+    tools:layout_editor_absoluteY="89dp">
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spdiahoraH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinstructorCH"
+        android:layout_width="1278dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spdiahoraH"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spjornadaCH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinstructorCH"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spprogramaCH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spjornadaCH"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnactualizarCH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spprogramaCH" />
+
+    <Button
+        android:id="@+id/btneliminarCH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="500dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spprogramaCH" />
+
+
+</android.support.constraint.ConstraintLayout>
