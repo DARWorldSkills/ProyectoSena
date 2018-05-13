@@ -49,11 +49,22 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Controlador.MapsActivity2"
-            android:label="@string/title_activity_maps2" />
-        <activity
             android:name=".Login.LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity android:name=".Controlador.IUser" />
+        <activity android:name=".Controlador.IInstructor" />
+        <activity android:name=".Controlador.CUser" />
+        <activity android:name=".Controlador.CPrograma" />
+        <activity android:name=".Controlador.IPrograma" />
+        <activity android:name=".Controlador.CInstructor" />
+        <activity android:name=".Controlador.IJornada" />
+        <activity android:name=".Controlador.CJornada" />
+        <activity android:name=".Controlador.IHorario" />
+        <activity android:name=".Controlador.CHorario" />
+        <activity android:name=".Controlador.CAE" />
+        <activity android:name=".Controlador.Registro">
+
+        </activity>
     </application>
 
 </manifest>

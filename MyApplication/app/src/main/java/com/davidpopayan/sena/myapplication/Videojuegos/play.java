@@ -1,17 +1,17 @@
 package com.davidpopayan.sena.myapplication.Videojuegos;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.davidpopayan.sena.myapplication.Modelo.GestorBD;
+import com.davidpopayan.sena.myapplication.Modelo.GestorDB;
 import com.davidpopayan.sena.myapplication.R;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class play extends AppCompatActivity {
     TextView info;
@@ -88,55 +88,58 @@ public class play extends AppCompatActivity {
 
     }
 
-    public void listartabla(){
-        GestorBD gestorBD = new GestorBD(this);
+    public void listartabla() {
+        GestorDB gestorBD = new GestorDB(this);
         SQLiteDatabase db = gestorBD.getWritableDatabase();
 
-        //Llendano lunes
-        txtcampo1lunes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Lunes' AND HORA = '7-8' ;",null).toString());
-        txtcampo2lunes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Lunes' AND HORA = '8-9' ;",null).toString());
-        txtcampo3lunes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Lunes' AND HORA = '9-10' ;",null).toString());
-        txtcampo4lunes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Lunes' AND HORA = '10-11' ;",null).toString());
-        txtcampo5lunes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Lunes' AND HORA = '11-12' ;",null).toString());
-        txtcampo6lunes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Lunes' AND HORA = '12-13' ;",null).toString());
+        String[] dias = {getString(R.string.lunes), getString(R.string.martes), getString(R.string.miercoles), getString(R.string.jueves), getString(R.string.viernes), getString(R.string.sabado)};
+        String[] horas = {getString(R.string.sieteocho), getString(R.string.ochonueve), getString(R.string.nuevediez), getString(R.string.diezonce), getString(R.string.oncedoce), getString(R.string.docetrece)};
+        TextView[] campos = {txtcampo1lunes, txtcampo2lunes, txtcampo3lunes, txtcampo4lunes, txtcampo5lunes, txtcampo6lunes,
+                txtcampo1martes, txtcampo2martes, txtcampo3martes, txtcampo4martes, txtcampo5martes, txtcampo6martes,
+                txtcampo1miercoles, txtcampo2miercoles, txtcampo3miercoles, txtcampo4miercoles, txtcampo5miercoles, txtcampo6miercoles,
+                txtcampo1jueves, txtcampo2jueves, txtcampo3jueves, txtcampo4jueves, txtcampo5jueves, txtcampo6jueves,
+                txtcampo1viernes, txtcampo2viernes, txtcampo3viernes, txtcampo4viernes, txtcampo5viernes, txtcampo6viernes,
+                txtcampo1sabado, txtcampo2sabado, txtcampo3sabado, txtcampo4sabado, txtcampo5sabado, txtcampo6sabado};
+        int tmp = 0;
+        int pa=0;
+        Cursor cursortmp;
+        Cursor cursorcampos;
+        for (int i = 0; i < dias.length; i++) {
+            for (int j = 0; j < horas.length; j++) {
 
-        txtcampo1martes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Martes' AND HORA = '7-8' ;",null).toString());
-        txtcampo2martes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Martes' AND HORA = '8-9' ;",null).toString());
-        txtcampo3martes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Martes' AND HORA = '9-10' ;",null).toString());
-        txtcampo4martes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Martes' AND HORA = '10-11' ;",null).toString());
-        txtcampo5martes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Martes' AND HORA = '11-12' ;",null).toString());
-        txtcampo6martes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Martes' AND HORA = '12-13' ;",null).toString());
+                        cursortmp=(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = '"+dias[i]+"' AND HORA = '"+horas[j]+"' ;", null));
+                        if (cursortmp.moveToFirst()) {
+                            //Recorremos el cursor hasta que no haya más registros
+                            do {
+                                tmp=(cursortmp.getInt(0));
+                                cursorcampos=(db.rawQuery("SELECT NOMBRE FROM INSTRUCTOR WHERE IDINSTRUCTOR = " + tmp + ";", null));
+                                if (cursorcampos.moveToFirst()) {
+                                    //Recorremos el cursor hasta que no haya más registros
+                                    do {
+                                        campos[pa].setText(cursorcampos.getString(0));
+                                    } while(cursorcampos.moveToNext());
 
-        txtcampo1miercoles.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Miercoles' AND HORA = '7-8' ;",null).toString());
-        txtcampo2miercoles.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Miercoles' AND HORA = '8-9' ;",null).toString());
-        txtcampo3miercoles.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Miercoles' AND HORA = '9-10' ;",null).toString());
-        txtcampo4miercoles.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Miercoles' AND HORA = '10-11' ;",null).toString());
-        txtcampo5miercoles.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Miercoles' AND HORA = '11-12' ;",null).toString());
-        txtcampo6miercoles.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Miercoles' AND HORA = '12-13' ;",null).toString());
+                                    cursorcampos.close();
+                                }
+                            } while(cursortmp.moveToNext());
+                        }
 
-        txtcampo1jueves.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Jueves' AND HORA = '7-8' ;",null).toString());
-        txtcampo2jueves.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Jueves' AND HORA = '8-9' ;",null).toString());
-        txtcampo3jueves.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Jueves' AND HORA = '9-10' ;",null).toString());
-        txtcampo4jueves.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Jueves' AND HORA = '10-11' ;",null).toString());
-        txtcampo5jueves.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Jueves' AND HORA = '11-12' ;",null).toString());
-        txtcampo6jueves.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Jueves' AND HORA = '12-13' ;",null).toString());
 
-        txtcampo1viernes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Viernes' AND HORA = '7-8' ;",null).toString());
-        txtcampo2viernes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Viernes' AND HORA = '8-9' ;",null).toString());
-        txtcampo3viernes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Viernes' AND HORA = '9-10' ;",null).toString());
-        txtcampo4viernes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Viernes' AND HORA = '10-11' ;",null).toString());
-        txtcampo5viernes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Viernes' AND HORA = '11-12' ;",null).toString());
-        txtcampo6viernes.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Viernes' AND HORA = '12-13' ;",null).toString());
+                        cursortmp.close();
 
-        txtcampo1sabado.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Sábado' AND HORA = '7-8' ;",null).toString());
-        txtcampo2sabado.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Sábado' AND HORA = '8-9' ;",null).toString());
-        txtcampo3sabado.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Sábado' AND HORA = '9-10' ;",null).toString());
-        txtcampo4sabado.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Sábado' AND HORA = '10-11' ;",null).toString());
-        txtcampo5sabado.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Sábado' AND HORA = '11-12' ;",null).toString());
-        txtcampo6sabado.setText(db.rawQuery("SELECT INSTRUCTOR FROM HORARIO WHERE JORNADA = 1 AND DIA = 'Sábado' AND HORA = '12-13' ;",null).toString());
+                        pa=pa+1;
+                    }
+
+            }
+
+
+        db.close();
+
+
 
 
     }
+
 
     public void back(View view) {
         finish();

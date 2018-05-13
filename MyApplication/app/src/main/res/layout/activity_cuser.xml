@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.CUser">
+
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerCU"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:ms_floatingLabelText="@string/seleccionerol"
+        app:layout_constraintTop_toTopOf="parent"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_hint="@string/seleccionerol"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="1264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCU">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpassCU"
+            android:hint="@string/nuevaclave" />
+    </android.support.design.widget.TextInputLayout>
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+
+    <Button
+        android:id="@+id/btnactualizarCU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="156dp"
+        android:text="@string/actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCR" />
+
+
+    <Button
+        android:id="@+id/btneliminarCU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="500dp"
+        android:layout_marginTop="156dp"
+        android:text="@string/eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCR" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
