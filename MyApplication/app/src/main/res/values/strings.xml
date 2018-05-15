@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Horario Sena</string>
     <string name="ctpi">CTPI</string>
     <string name="centrotele">Centro de Teleinformatica y Produccion Industrial</string>
     <string name="btnlogin">Login</string>
@@ -42,4 +42,89 @@ Así mismo, la variedad de elementos que se puede utilizar en estas, generan una
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="contrasena">Contraseña</string>
+    <string name="Username">Usuario</string>
+    <string name="iniciarsesion">Iniciar Sesión</string>
+
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="usuario">Usuario</string>
+    <string name="insertenombreinstructor">Inserte el nombre del instructor</string>
+    <string name="agregarInstructor">Agregar Instructor</string>
+    <string name="insertecontrasena">Inserte contraseña</string>
+    <string name="inserteusername">Inserte el nombre del usuario</string>
+    <string name="agreagar">Agregar</string>
+    <string name="agregarusuario">Agregar Usuario</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="guardar">Guargar</string>
+    <string name="ingreseicono">Ingrese la URL del Icono</string>
+    <string name="ingresevideo">Ingrese la URL del Video</string>
+    <string name="ingresedescripcion">Ingrese una descripción</string>
+    <string name="ingresenombreP">Ingrese el nombre del programa</string>
+    <string name="nuevaclave">Ingrese la nueva contraseña</string>
+    <string name="insertetelefonoinstructor">Ingresar Teléfono</string>
+    <string name="insertecorreoinstructor">Ingrese correo</string>
+    <string name="agregarinstructor">Agregar Instructor</string>
+    <string name="agregarJornada">Agregar Jornada</string>
+    <string name="nombre">Nombre</string>
+    <string name="horario">Horario</string>
+    <string name="urlIcono">URL del Icono</string>
+    <string name="agregarhorario">Agregar Horario</string>
+    <string name="seleccionerol">Seleccione Rol</string>}
+    <string name="seleccioneJornada">Seleccione Jornada</string>
+    <string name="seleccioneHorario">Seleccione Horario</string>
+    <string name="seleccioneDia">Seleccione Dia</string>
+    <string name="seleccioneHora">Seleccione Hora</string>
+    <string name="seleccioneInstructor">Seleccione Instructor</string>
+    <string name="seleccionePrograma">Seleccione Programa</string>
+    <string name="agregarprograma">Agregar Programa</string>
+    <string name="CAE">Consultar, Actualizar y Eliminar(CAE)</string>
+    <string name="lunes">Lunes</string>
+    <string name="martes">Martes</string>
+    <string name="miercoles">Miercoles</string>
+    <string name="jueves">Jueves</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sábado</string>
+    <string name="sieteocho">7-8</string>
+    <string name="ochonueve">8-9</string>
+    <string name="nuevediez">9-10</string>
+    <string name="diezonce">10-11</string>
+    <string name="oncedoce">11-12</string>
+    <string name="docetrece">12-13</string>
+    <string name="trececatorce">13-14</string>
+    <string name="catorcequince">14-15</string>
+    <string name="quincedieciseis">15-16</string>
+    <string name="dieciseisdiecisiete">16-17</string>
+    <string name="diecisietedieciocho">17-18</string>
+    <string name="dieciochodiecinueve">18-19</string>
+    <string name="diecinueveveinte">19-20</string>
+    <string name="veinteventiuno">20-21</string>
+    <string name="ventiunoventidos">21-22</string>
+    <string name="ventidosventitres">22-23</string>
+    <string name="ventitrescero">23-0</string>
+    <string name="registro">Registro</string>
+    <string name="CAEuser">CAE usuario</string>
+    <string name="caeInstructor">CAE instructor</string>
+    <string name="caeJornada">CAE Jornada</string>
+    <string name="caeprograma">CAE Programa</string>
+    <string name="caehorario">CAE Horario</string>
+    <string name="seleccioneDHora">Seleccione Dia y Hora</string>
+
+
 </resources>
