@@ -66,8 +66,8 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="116dp"
+        android:id="@+id/btnloginA"
+        android:layout_width="120dp"
         android:layout_height="64dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="392dp"
@@ -343,6 +343,16 @@
         android:textSize="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnregistroA"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnloginA" />
 
 
 </android.support.constraint.ConstraintLayout>

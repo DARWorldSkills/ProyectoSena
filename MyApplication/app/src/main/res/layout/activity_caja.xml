@@ -152,7 +152,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo9juves"
+                android:id="@+id/campo9jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -222,7 +222,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo10juves"
+                android:id="@+id/campo10jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -278,7 +278,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/campo3martes"
+                android:id="@+id/campo11martes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -292,7 +292,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo3juves"
+                android:id="@+id/campo11jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -306,7 +306,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo3sabado"
+                android:id="@+id/campo11sabado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -362,7 +362,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo12juves"
+                android:id="@+id/campo12jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -432,7 +432,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo13juves"
+                android:id="@+id/campo13jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -502,7 +502,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo14juves"
+                android:id="@+id/campo14jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
