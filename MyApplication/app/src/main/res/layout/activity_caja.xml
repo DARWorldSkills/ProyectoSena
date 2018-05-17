@@ -8,23 +8,29 @@
     android:background="@drawable/cajamenu">
 
 
-
-
+    <ImageView
+        android:layout_width="1403dp"
+        android:layout_height="851dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/tabla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
     <TableLayout
         android:layout_width="911dp"
-        android:layout_height="284dp"
+        android:layout_height="412dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintHorizontal_bias="0.736"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576">
+        app:layout_constraintVertical_bias="0.735">
 
 
         <TableRow
@@ -103,18 +109,6 @@
 
         </TableRow>
 
-        <TableRow
-            android:id="@+id/SeparadorCabecera"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:id="@+id/LineaCabecera"
-                android:layout_width="fill_parent"
-                android:layout_height="4px"
-                android:layout_span="7"
-                android:background="#000"></FrameLayout>
-        </TableRow>
 
         <TableRow
             android:id="@+id/campo9"
@@ -125,6 +119,7 @@
                 android:id="@+id/hora9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="13 - 14"
                 android:textColor="#000"
@@ -135,6 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -142,6 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -149,13 +146,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo9juves"
+                android:id="@+id/campo9jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -163,6 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -170,21 +170,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/SeparadorCabecera2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:id="@+id/LineaCabecera2"
-                android:layout_width="fill_parent"
-                android:layout_height="4px"
-                android:layout_span="7"
-                android:background="#000"></FrameLayout>
-        </TableRow>
 
         <TableRow
             android:id="@+id/campo10"
@@ -195,6 +184,7 @@
                 android:id="@+id/hora10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="14 - 15"
                 android:textColor="#000"
@@ -205,6 +195,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -212,6 +203,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -219,13 +211,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo10juves"
+                android:id="@+id/campo10jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -233,6 +227,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -240,21 +235,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/SeparadorCabecera3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:id="@+id/LineaCabecera3"
-                android:layout_width="fill_parent"
-                android:layout_height="4px"
-                android:layout_span="7"
-                android:background="#000"></FrameLayout>
-        </TableRow>
 
         <TableRow
             android:id="@+id/campo11"
@@ -265,6 +249,7 @@
                 android:id="@+id/hora11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="15 - 16"
                 android:textColor="#000"
@@ -275,13 +260,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/campo3martes"
+                android:id="@+id/campo11martes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -289,13 +276,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo3juves"
+                android:id="@+id/campo11jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -303,28 +292,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo3sabado"
+                android:id="@+id/campo11sabado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/SeparadorCabecera4"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:id="@+id/LineaCabecera4"
-                android:layout_width="fill_parent"
-                android:layout_height="4px"
-                android:layout_span="7"
-                android:background="#000"></FrameLayout>
-        </TableRow>
 
         <TableRow
             android:id="@+id/campo12"
@@ -335,6 +314,7 @@
                 android:id="@+id/hora12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="16 - 17"
                 android:textColor="#000"
@@ -345,6 +325,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -352,6 +333,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -359,13 +341,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo12juves"
+                android:id="@+id/campo12jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -373,6 +357,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -380,21 +365,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/SeparadorCabecera5"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:id="@+id/LineaCabecera5"
-                android:layout_width="fill_parent"
-                android:layout_height="4px"
-                android:layout_span="7"
-                android:background="#000"></FrameLayout>
-        </TableRow>
 
         <TableRow
             android:id="@+id/campo13"
@@ -405,6 +379,7 @@
                 android:id="@+id/hora13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="17 - 18"
                 android:textColor="#000"
@@ -415,6 +390,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -422,6 +398,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -429,13 +406,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo13juves"
+                android:id="@+id/campo13jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -443,6 +422,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -450,21 +430,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/SeparadorCabecera6"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:id="@+id/LineaCabecera6"
-                android:layout_width="fill_parent"
-                android:layout_height="4px"
-                android:layout_span="7"
-                android:background="#000"></FrameLayout>
-        </TableRow>
 
         <TableRow
             android:id="@+id/campo14"
@@ -475,6 +444,7 @@
                 android:id="@+id/hora14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="18 - 19"
                 android:textColor="#000"
@@ -485,6 +455,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -492,6 +463,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -499,13 +471,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/campo14juves"
+                android:id="@+id/campo14jueves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -513,6 +487,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
 
             <TextView
@@ -520,21 +495,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="22sp" />
         </TableRow>
 
-        <TableRow
-            android:id="@+id/SeparadorCabecera7"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
 
-            <FrameLayout
-                android:id="@+id/LineaCabecera7"
-                android:layout_width="fill_parent"
-                android:layout_height="4px"
-                android:layout_span="7"
-                android:background="#000"></FrameLayout>
-        </TableRow>
     </TableLayout>
 
 
@@ -601,14 +566,14 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/NumFicha"
+        android:id="@+id/txtNumFichaT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="280dp"
         android:text="1256800"
-        android:textSize="45dp"
         android:textColor="#6C6C6C"
+        android:textSize="45dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -656,13 +621,13 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/txtProgramaT"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
         android:layout_marginStart="304dp"
-        android:textColor="#F99106"
         android:layout_marginTop="24dp"
         android:text="@string/pro2"
+        android:textColor="#F99106"
         android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -683,14 +648,14 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/txtInstructorT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="304dp"
         android:text="Erick Ortiz"
-        android:textStyle="bold"
         android:textColor="#6C6C6C"
         android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22"
         tools:ignore="MissingConstraints" />

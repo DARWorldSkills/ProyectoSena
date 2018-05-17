@@ -12,29 +12,40 @@
         android:layout_width="95dp"
         android:layout_height="104dp"
         android:layout_marginBottom="8dp"
-        android:onClick="back"
         android:layout_marginTop="8dp"
         android:background="@drawable/atras"
+        android:onClick="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.599"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1346dp"
+        android:layout_height="784dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/fondovideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <FrameLayout
         android:id="@+id/contenedor2"
-        android:layout_width="762dp"
-        android:layout_height="423dp"
+        android:layout_width="826dp"
+        android:layout_height="354dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714">
+        app:layout_constraintVertical_bias="0.736">
 
     </FrameLayout>
 

@@ -66,8 +66,8 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="116dp"
+        android:id="@+id/btnloginA"
+        android:layout_width="120dp"
         android:layout_height="64dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="392dp"
@@ -205,14 +205,14 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/txtjornadaM"
         android:layout_width="188dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="128dp"
         android:layout_marginTop="180dp"
         android:text="@string/Pro1"
-        android:textSize="30dp"
         android:textColor="#6E6C6A"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -252,12 +252,12 @@
         android:text="@string/Programa"
         android:textColor="#6A6866"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintBottom_toTopOf="@+id/txtjornadaTarde"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/txtjornadaTarde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="296dp"
@@ -311,14 +311,14 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/txtjornadaNoche"
         android:layout_width="224dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
         android:layout_marginEnd="92dp"
         android:text="@string/pro3"
-        android:textSize="30dp"
         android:textColor="#6E6C6A"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -343,6 +343,16 @@
         android:textSize="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnregistroA"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnloginA" />
 
 
 </android.support.constraint.ConstraintLayout>

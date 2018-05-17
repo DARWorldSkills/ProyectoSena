@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.CFicha"
+    android:background="@drawable/fondodep">
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerCFNumero"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="164dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelText="@string/seleccioneFicha"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hint="@string/seleccioneFicha"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerCFPrograma"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCFNumero"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelText="@string/seleccioneFicha"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hint="@string/seleccioneFicha"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerCFInstructor"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCFPrograma"
+        app:ms_arrowColor="@color/colorPrimaryDark"
+        app:ms_arrowSize="20sp"
+        app:ms_baseColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelColor="@color/colorPrimaryDark"
+        app:ms_floatingLabelText="@string/seleccioneFicha"
+        app:ms_highlightColor="@color/colorAccent"
+        app:ms_hint="@string/seleccioneFicha"
+        app:ms_hintColor="@color/colorPrimaryDark" />
+
+
+    <Button
+        android:id="@+id/btnactualizarCF"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCFInstructor" />
+
+    <Button
+        android:id="@+id/btneliminarCF"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="500dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCFInstructor" />
+
+</android.support.constraint.ConstraintLayout>
